@@ -2,7 +2,7 @@
  * @Author: Liu Yuchen
  * @Date: 2021-04-03 21:50:22
  * @LastEditors: Liu Yuchen
- * @LastEditTime: 2021-04-02 13:08:14
+ * @LastEditTime: 2021-04-02 13:22:34
  * @Description:
  * @FilePath: /toDoList/model/todo.go
  * @GitHub: https://github.com/liuyuchen777
@@ -18,8 +18,11 @@ type Todo struct {
 	Status bool   `json:"status"` // false: not finished, true: finished
 }
 
-// CRUD
+func InitModel() {
+	db.DB.AutoMigrate(&Todo{})
+}
 
+// CRUD
 // create
 func CreateTodo(todo *Todo) error {
 	return db.DB.Create(&todo).Error

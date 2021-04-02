@@ -2,9 +2,9 @@
  * @Author: Liu Yuchen
  * @Date: 2021-04-03 21:46:49
  * @LastEditors: Liu Yuchen
- * @LastEditTime: 2021-04-02 12:34:32
+ * @LastEditTime: 2021-04-02 13:22:15
  * @Description:
- * @FilePath: /Local_Lab/toDoList/db/mysql.go
+ * @FilePath: /toDoList/db/mysql.go
  * @GitHub: https://github.com/liuyuchen777
  */
 
