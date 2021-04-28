@@ -20,7 +20,7 @@ var (
 )
 
 func InitMySQL() (err error) {
-	dsn := "root:lyc7758321321@(localhost:3306)/todo?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:LYClyc7758321321!@(localhost:3306)/todo?charset=utf8mb4&parseTime=True&loc=Local"
 	DB, err = gorm.Open("mysql", dsn)
 	if err != nil {
 		panic(err)
